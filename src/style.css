@@ -15,13 +15,24 @@
 }
 
 
-.greeting .title {
-	display: flex;
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
 }
- 
+
+
+
+
+
+
+
+ /*greeting*/
  
 .greeting .title input {
-	margin-left: 0.5rem;
+	margin-left: auto;
 	flex: 1 1 0%;
 	min-width: 0;
 }
@@ -30,29 +41,34 @@
 .greeting .title,
 .greeting .title input {
 	color: var(--dark);
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 700;
+  cursor: pointer;
 }
 
 
 
 
+/*body & h & p*/
 
 
 
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 20vh;
-}
 
 h2 {
   font-size: 3.2em;
-  line-height: 4.4;
+  text-align: center;
+  margin: 0 0 50px 0;
+
 }
+
+p{
+  font-size: 2em;
+  padding: 0%;
+  margin: 0 0 15px 0;
+}
+
+/* button*/
 
 button {
   border-radius: 8px;
@@ -64,24 +80,19 @@ button {
   background-color: #07eafa;
   cursor: pointer;
   
+  
 }
 button:hover {
   border-color: #0cf78d;
-	
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 
 
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
 
-}
+
 
 
 
@@ -89,15 +100,11 @@ button:hover {
 
 
 
-h2 {
-    text-align: center;
-    
-}
 
-p{
-  font-size: 2em;
-  padding: 0%;
-}
+
+
+
+/* */
 
 form {
     display: flex;
@@ -105,28 +112,32 @@ form {
     margin-bottom: 20px;
 }
 
-input {
-    margin-right: 10px;
+
+input {      /*name&number*/
+    margin-right: 20px;
     padding: 5px;
-    font-size: 2em;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 
 /*results*/
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1em;
 
+ul {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 li {
     background: #e2f1f1;
-    margin: 5px 0;
+    margin: 10px ;
     padding: 10px;
     border: 3px solid #0cf78d;
+    max-width: 100% ;
+    
 }
-
 
 
