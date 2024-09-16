@@ -26,10 +26,11 @@
       
     </form>
     <ul>
-      <h3>Contact List</h3>
+      <h3> Contact List</h3>
       <li v-for="contact in contacts" :key="contact.id">{{ contact.name }} - {{ contact.phonenumber }} - {{ contact.email }}</li>
     </ul>
   </div>
+
 
   </main>
 

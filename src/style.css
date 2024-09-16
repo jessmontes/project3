@@ -62,10 +62,19 @@ h2 {
 
 }
 
+
+ h3{
+  font-size: 1.5em;
+  text-align: center;
+
+
+}
+
 p{
   font-size: 2em;
   padding: 0%;
   margin: 0 0 15px 0;
+  text-align: center;
 }
 
 /* button*/
@@ -84,52 +93,30 @@ button {
 }
 button:hover {
   border-color: #0cf78d;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-
-
-
-
-
-
-
-
-
-/* ccs from project2*/
-
-
-
-
-
-
-
-/* */
 
 form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+ 
 }
 
+  /*name&number&email*/
 
-input {      /*name&number*/
+
+input {    
     margin-right: 20px;
     padding: 5px;
     font-size: 1em;
     cursor: pointer;
+   
 }
 
 
-/*results*/
-
-
-ul {
-  list-style-type: none;
-  padding: 10px;
-  font-size: 1.2em;
-  cursor: pointer;
-}
+/*li, ul*/
 
 li {
     background: #e2f1f1;
@@ -137,7 +124,10 @@ li {
     padding: 10px;
     border: 3px solid #0cf78d;
     max-width: 100% ;
-    
+    font-size: 1.4em;
+    text-align: center;
+  word-spacing: 80px;
+    list-style-type: none;
 }
 
 
