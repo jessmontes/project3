@@ -8,14 +8,13 @@
 
 <section class="greeting">
   <h1 class="title">
-    Welcome back, <input type="text" placeholder="Enter Name" v-model="EnterN">
+    &#9743; Welcome back,<input type="text" placeholder="Enter Name" v-model="EnterN">
   </h1>
 </section>
 
 
   <div>
     <h2>Create A New Contact List</h2>
-
 
     <p>Create the new contact by filling in the information below..</p>
     <form @submit.prevent="addContact">
