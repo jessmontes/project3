@@ -1,0 +1,132 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+
+  color-scheme: light dark;
+  color: rgba(20, 2, 2, 0.87);
+  background-color: #fbf9f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.greeting .title {
+	display: flex;
+}
+ 
+ 
+.greeting .title input {
+	margin-left: 0.5rem;
+	flex: 1 1 0%;
+	min-width: 0;
+}
+ 
+ 
+.greeting .title,
+.greeting .title input {
+	color: var(--dark);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 20vh;
+}
+
+h2 {
+  font-size: 3.2em;
+  line-height: 4.4;
+}
+
+button {
+  border-radius: 8px;
+  border: 4px solid transparent;
+  padding: 5px 40px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #07eafa;
+  cursor: pointer;
+  
+}
+button:hover {
+  border-color: #0cf78d;
+	
+}
+
+
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+}
+
+
+
+/* ccs from project2*/
+
+
+
+h2 {
+    text-align: center;
+    
+}
+
+p{
+  font-size: 2em;
+  padding: 0%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 2em;
+}
+
+
+/*results*/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+
+}
+
+li {
+    background: #e2f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border: 3px solid #0cf78d;
+}
+
+
+
