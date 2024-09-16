@@ -20,13 +20,14 @@
     <form @submit.prevent="addContact">
       <input type="text" v-model="name" placeholder="Name" required>
       <input type="text" v-model="phonenumber" placeholder="Phone Number" required>
+      <input type="text" v-model="email" placeholder="Email" required>
 
       <button type="submit">Add Contact</button>
       
     </form>
     <ul>
       <h3>Contact List</h3>
-      <li v-for="contact in contacts" :key="contact.id">{{ contact.name }} - {{ contact.phonenumber }}</li>
+      <li v-for="contact in contacts" :key="contact.id">{{ contact.name }} - {{ contact.phonenumber }} - {{ contact.email }}</li>
     </ul>
   </div>
 
@@ -42,14 +43,16 @@ export default {
     return {
       name: '',
       phonenumber: '',
+      email: '',
       contacts: []
     };
   },
   methods: {
     addContact() {
-      this.contacts.push({ id: Date.now(), name: this.name, phonenumber: this.phonenumber });
+      this.contacts.push({ id: Date.now(), name: this.name, phonenumber: this.phonenumber, email: this.email });
       this.name = '';
       this.phonenumber = '';
+      this.email ='';
     }
   }
 };
